@@ -1,0 +1,41 @@
+#footer{
+  background-color: #314870;
+  color: #fff;
+  .content{
+    .logo{
+      img{
+
+      }
+    }
+    h3{
+      font-family: 'PlayfairDisplay',sans-serif;
+      font-weight: 700;
+      position: relative;
+      &:after{
+        content: '';
+        width: 260px;
+        height: 2px;
+        background-color: #f4d36a;
+        position: absolute;
+        left: 0;
+        top:10px;
+      }
+      &:before{
+        content: '';
+        width: 130px;
+        height: 2px;
+        background-color: #f4d36a;
+        position: absolute;
+        left: 0;
+        top:15px;
+      }
+    }
+    ul{
+      li{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }
+}

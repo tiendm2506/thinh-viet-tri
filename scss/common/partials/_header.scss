@@ -1,0 +1,44 @@
+#header{
+  nav{
+    display: flex;
+    align-items: center;
+    .logo{
+      img{
+        width: 120px;
+      }
+    }
+    .wrapper{
+      display: flex;
+      ul.menu{
+        display: flex;
+        margin: 0 30px 0 50px;
+        li{
+          margin-right: 25px;
+          &:last-child{
+            margin-right: 0;
+          }
+          a{
+            color: #5d5d5d;
+            letter-spacing: 0.2px;
+            font-weight: 500;
+            &.active{
+              color: #c7ab50;
+            }
+            &:hover{
+              color: #c7ab50;
+            }
+          }
+        }
+      }
+      .search-languages{
+        display: flex;
+        li{
+          margin-right: 15px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
