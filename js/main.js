@@ -2,36 +2,36 @@ ActionJs = {
     Init : function(){
         ActionJs.scrollFixMenu();
         ActionJs.showMenuMobile();
-        ActionJs.orderItem();
-        ActionJs.changeFlag();
-    },
-    scrollFixMenu : function(){
-        $(window).scroll(function(){
-            let pos_body = window.pageYOffset;
-            if(pos_body > 100){
-                $('#header').addClass('scrolled');
-            }else {
-                $('#header').removeClass('scrolled');
-            }
-        });
+        ActionJs.displayFormSearch();
+        ActionJs.scrollFixMenu();
+        ActionJs.setTopSearchForm();
     },
     showMenuMobile : function(){
         $('.control__menu').on('click', function(){
+            console.log('aaa');
             $(this).toggleClass('show');
-            $('.menu-part').toggleClass('show');
+            $('#header nav .wrapper').toggleClass('show');
         });
     },
-    orderItem : function(){
-        $('#nop-rut-tien-page #nop-rut-tien .tab-info .nav-tabs .nav-item .nav-link').on('click', function(){
-            $('#nop-rut-tien-page #nop-rut-tien .tab-info .nav-tabs .nav-item .nav-link').parent().css('order','2')
-            $(this).parent().css('order','1')
+    displayFormSearch : function(){
+        $('#header nav .wrapper .search-languages li svg, #header .wrapper-control-mobile img').on('click', function(){
+            $('#header nav .wrapper .search-languages form').toggleClass('d-block');
         });
     },
-    changeFlag : function(){
-        $('.language').on('change', function(){
-            let value = $(this).val();
-            $('.flag-icon').attr('src', '../images/' + value + '.png');
+    scrollFixMenu : function(){
+        $(window).scroll(function(){
+            var pos_body	= window.pageYOffset;
+            if(pos_body > 10){
+                $('#header').addClass('fix-menu');
+            }else {
+                $('#header').removeClass('fix-menu');
+            }
         });
+    },
+    setTopSearchForm : function(){
+        var h_header = $('#header').outerHeight();
+        $('#header nav .wrapper .search-languages form').css('top', h_header + 15);
+        $('#header nav .wrapper').css('top', h_header);
     }
 }
 ActionJs.Init();

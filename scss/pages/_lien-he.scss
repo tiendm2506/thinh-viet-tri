@@ -1,0 +1,95 @@
+#lien-he{
+  #contact{
+    padding-top: 80px;
+    @media(max-width: 991px){
+      padding-top: 40px;
+    }
+    .content{
+      h2{
+        letter-spacing: 0.4px;
+        color: #314870;
+        font-size: 24px;
+        font-family: 'PlayfairDisplay',sans-serif;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      h3{
+        font-size: 15px;
+        color: #314870;
+        font-weight: 700;
+      }
+      p{
+        margin-bottom: 15px;
+        span{
+          color: #5d5d5d;
+          font-weight: 700;
+        }
+      }
+    }
+    form{
+      @media(max-width: 991px){
+        margin-top: 25px;
+      }
+      .wrapper-input{
+        input{
+          width: calc(50% - 10px);
+          margin-right: 10px;
+          border: 1px solid #d4d4d4;
+          padding: 15px;
+          @media(max-width: 767px){
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+          &:focus{
+            outline: none;
+            border-color: #c7ab50;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+      textarea{
+        width: calc(100% - 6px);
+        border: 1px solid #d4d4d4;
+        padding: 15px;
+        margin: 15px 0 25px;
+        resize: none;
+        height: 215px;
+        @media(max-width: 767px){
+          height: 120px;
+        }
+        &:focus{
+          outline: none;
+          border-color: #c7ab50;
+        }
+      }
+      button{
+        color: #f4d36a;
+        background-color: #314870;
+        font-size: 15px;
+        font-family: 'Open Sans',sans-serif;
+        font-weight: 700;
+        width: 140px;
+        padding: 15px 0;
+        text-align: center;
+        transition: all .5s ease;
+        border:none;
+        &:hover{
+          background: #f4d36a;
+          color: #314870;
+        }
+      }
+    }
+  }
+  #map{
+    padding: 80px 0 25px;
+    @media(max-width: 991px){
+      padding-top: 40px;
+    }
+  }
+}

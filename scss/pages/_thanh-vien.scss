@@ -1,0 +1,77 @@
+#thanh-vien{
+  #info-member{
+    .row{
+      border-bottom: 5px solid #c7ab50;
+      @media(max-width: 767px){
+        position: relative;
+        &:before{
+          content:'';
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 15px;
+          height: 5px;
+          background: #fff;
+        }
+        &:after{
+          content:'';
+          display: inline-block;
+          position: absolute;
+          right:0;
+          bottom: -5px;
+          width: 15px;
+          height: 5px;
+          background: #fff;
+        }
+      }
+      div[class^="col-"]{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .content{
+      h2{
+        letter-spacing: 0.6px;
+        color: #314870;
+        font-size: 36px;
+        font-family: "PlayfairDisplay",sans-serif;
+        font-weight: 700;
+        @media(max-width: 767px){
+          font-size: 24px;
+          margin-top: 50px;
+        }
+      }
+      h6{
+        color: #c7ab50;
+        margin: 15px 0 40px;
+        @media(max-width: 767px){
+          margin: 15px 0 25px;
+        }
+      }
+      ul{
+        @media(max-width: 991px){
+          margin-bottom: 10px;
+        }
+        li{
+          color: #5d5d5d;
+          margin-bottom: 5px;
+          span{
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  #experience{
+    padding: 80px 0;
+    @media(max-width: 991px){
+      padding: 40px 0 20px;
+    }
+    p{
+      letter-spacing: 0.6px;
+      color: #5d5d5d;
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+#tuyen-dung{
+  .col-sm-6{
+    @media(min-width: 768px){
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+    }
+  }
+  #main-content{
+    padding-top: 40px;
+    .item{
+      margin-bottom: 40px;
+    }
+    .left-col{
+      position: relative;
+      width: 100%;
+      @media(max-width: 767px){
+        margin-bottom: 15px;
+      }
+      img{}
+      .type-job{
+        position: absolute;
+        color: #314870;
+        font-size: 20px;
+        padding: 13px 0;
+        width: 170px;
+        background-color: #f4d36a;
+        text-align: center;
+        right: 0;
+        top:0;
+        display: inline-block;
+        @media(max-width: 767px){
+          font-size: 14px;
+          width: 123px;
+          padding: 15px 0;
+        }
+      }
+    }
+    .right-col{
+      a{
+        color: #314870;
+        font-size: 24px;
+        font-family: 'PlayfairDisplay',sans-serif;
+        &:hover{
+          color: #f4d36a;
+        }
+      }
+      p{
+        color: #949494;
+        margin: 15px 0;
+      }
+      h6{
+        color: #949494;
+        font-size: 12px;
+        font-style: italic;
+      }
+    }
+  }
+}

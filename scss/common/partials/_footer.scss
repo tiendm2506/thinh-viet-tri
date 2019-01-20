@@ -2,13 +2,26 @@
   background-color: #314870;
   color: #fff;
   padding: 30px 0 40px 0;
+  @media(max-width: 767px){
+    font-size: 10px;
+    padding-bottom: 10px;
+  }
   .logo{
     margin-bottom: 40px;
+    @media(max-width: 767px){
+      margin-bottom: 25px;
+    }
     img{
       width: 120px;
+      @media(max-width: 767px){
+        width: 90px;
+      }
     }
   }
   .content{
+    @media(max-width: 767px){
+      margin-bottom: 25px;
+    }
     &.contact-col{
       ul{
         li{

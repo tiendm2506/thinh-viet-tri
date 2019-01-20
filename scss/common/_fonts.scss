@@ -38,5 +38,15 @@
   url('../fonts/PlayfairDisplay-Bold.svg#svgFontName') format('svg');
   font-weight: 700;
 }
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplay-Regular.eot');
+  src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+  url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay-Regular.svg#svgFontName') format('svg');
+  font-weight: 400;
+}
 
 

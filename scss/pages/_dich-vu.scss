@@ -1,0 +1,70 @@
+#dich-vu{
+  #service-details{
+    .content{
+      padding: 65px 0;
+      &:hover{
+        span{
+          background-color: #f4d36a;
+          border-color: #f4d36a;
+          color: #314870;
+        }
+      }
+      span{
+        font-size: 17px;
+        background-color: #314870;
+        border: 1px solid #314870;
+        font-family: "Montserrat",sans-serif;
+        font-weight: 300;
+        width: 200px;
+        padding: 11px;
+        transition: all .5s ease;
+      }
+      p{
+        max-height: initial;
+        overflow: visible;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  #banner-inpage{
+    padding: 117px 0 102px;
+    position: relative;
+    margin-bottom: 80px;
+    background-image: url('../images/library-869061_1920.png');
+    @media(max-width: 767px){
+      padding-bottom: 117px;
+      background-image: url('../images/library-869061_1920-mb.png');
+      margin-bottom: 0;
+    }
+    &:after{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: '';
+      background: #000;
+      opacity: 0.2;
+      z-index: 1;
+    }
+    h2{
+      color: #fff;
+      font-size: 36px;
+      font-family: 'PlayfairDisplay',sans-serif;
+      font-weight: 700;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      @media(max-width: 991px){
+        font-size: 35px;
+      }
+      @media(max-width: 767px){
+        font-size: 20px;
+      }
+      span{
+        color: #f4d36a;
+      }
+    }
+  }
+}

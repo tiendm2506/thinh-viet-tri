@@ -5,6 +5,12 @@
     position: relative;
     color: #fff;
     background-position: center center;
+    @media(max-width: 992px){
+      height: 400px;
+    }
+    @media(max-width: 767px){
+      height: 540px;
+    }
     .content{
       position: absolute;
       left: 0;
@@ -16,11 +22,18 @@
         font-size: 36px;
         font-family: 'PlayfairDisplay',sans-serif;
         font-weight: 700;
+        @media(max-width: 767px){
+          font-size: 18px;
+        }
       }
       h3{
         font-size: 20px;
         letter-spacing: 0.3px;
         margin: 15px 0 25px;
+        @media(max-width: 767px){
+          font-size: 13px;
+          margin: 7px 0 20px;
+        }
       }
       a{
         display: inline-block;
@@ -31,6 +44,11 @@
         color: #fff;
         font-weight: 700;
         font-size: 24px;
+        @media(max-width: 767px){
+          font-size: 14px;
+          padding: 11px 0;
+          width: 167px;
+        }
         &:hover{
           background: #fff;
           color: #c7ab50;
@@ -40,7 +58,13 @@
   }
   #who-we-are{
     padding: 80px 0 0 0;
+    @media(max-width: 767px){
+      padding-top: 40px;
+    }
     .left-col{
+      @media(max-width: 767px){
+        text-align: center;
+      }
       h4{
         color: #646464;
         font-style: italic;
@@ -48,12 +72,26 @@
         letter-spacing: 0.4px;
         margin-bottom: 5px;
         margin-top: 130px;
+        @media(max-width: 1199px){
+          margin-top: 75px;
+        }
+        @media(max-width: 991px){
+          margin-top: 0;
+        }
+        @media(max-width: 767px){
+          font-size: 13px;
+          text-align: left;
+        }
       }
       p{
         color: #949494;
         letter-spacing: 0.2px;
         margin-bottom: 25px;
         max-width: 545px;
+        @media(max-width: 767px){
+          font-size: 13px;
+          text-align: left;
+        }
       }
       a{
         display: inline-block;
@@ -66,6 +104,9 @@
         font-weight: 300;
         color: #fff;
         border: 1px solid #314870;
+        @media(max-width: 767px){
+          font-size: 14px;
+        }
         &:hover{
           background: #fff;
           color: #314870;
@@ -100,126 +141,116 @@
       margin-bottom: 10px;
       position: relative;
       z-index: 2;
+      @media(max-width: 767px){
+        font-size: 24px;
+      }
     }
     p{
       position: relative;
       z-index: 2;
     }
   }
-  #service-details{
-    padding: 65px 0 40px;
-    .col-lg-4{
-      padding: 0 8px;
+
+
+  #our-clients{
+    .owl-carousel {
+      .owl-stage{
+        display: flex;
+        align-items: center;
+      }
     }
-    .title-section{
-      margin-bottom: 50px;
+    .owl-carousel .owl-nav button.owl-prev span{
+      background-image: url(../images/arr-left-slider-clitens.svg);
     }
-    .content{
-      text-align: center;
-      border: 1px solid rgba(49, 72, 112, 0.2);
-      margin-bottom: 16px;
-      padding: 10px 0 10px 0;
-      position: relative;
-      &:hover{
-        background-color: #1f3050;
-        h3,p{
-          color: #fff;
-        }
-      }
-      img{}
-      h3{
-        letter-spacing: 0.3px;
-        color: #314870;
-        font-family: "PlayfairDisplay",sans-serif;
-        font-weight: 700;
-        margin: 15px 0;
-      }
-      p{
-        max-width: 200px;
-        margin: 0 auto 10px;
-        max-height: 54px;
-        overflow: hidden;
-      }
-      span{
-        color: #f4d36a;
-        display: inline-block;
-        img{
-          width: 20px;
-          position: relative;
-          top: -1px;
-        }
-      }
-      a{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+    .owl-carousel .owl-nav button.owl-next span{
+      background-image: url(../images/arr-right-slider-clitens.svg);
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+      left: -90px;
+    }
+    .owl-carousel .owl-nav button.owl-next{
+      right:-90px;
+    }
+    .wrapper-bg{
+      background-color: #f5f5f5;
+      padding: 40px 0;
+      .clients-slider{
+        padding: 0 90px;
       }
     }
   }
-  #our-laws{
-    .slider{
-      .box{
-        text-align: center;
-        position: relative;
+  #news{
+    padding: 40px 0 80px;
+    .col-lg-6{
+      padding: 0 8px;
+    }
+    .left-col{
+      img{}
+      a{
+        letter-spacing: 0.4px;
+        color: #314870;
+        font-family: 'PlayfairDisplay',sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 25px;
         &:hover{
-          .img-wrapper{
-            &:after{
-              opacity: 0.35;
-            }
-            .icon-search{
-              opacity: 1;
+          color: #f4d36a;
+        }
+        @media(max-width: 767px){
+          font-size: 20px;
+        }
+      }
+      h6{
+        color: #949494;
+        margin: 15px 0;
+        font-size: 12px;
+        font-style: italic;
+      }
+      p{}
+    }
+    .right-col{
+      @media(max-width: 991px){
+        margin-top: 25px;
+      }
+      .list-post{
+        li{
+          display: flex;
+          margin-bottom: 15px;
+          position: relative;
+          &:hover{
+            h5{
+              color: #f4d36a !important;
             }
           }
-
-        }
-        .img-wrapper{
-          position: relative;
-          &:after{
-            content: '';
-            display: block;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          a{
             position: absolute;
             left: 0;
-            top: 0;
+            top:0;
             width: 100%;
             height: 100%;
-            opacity: 0;
-            background-color: #314870;
-            transition:all .5s ease;
           }
-          .icon-search{
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            width: 65px;
-            z-index: 2;
-            opacity: 0;
-            transition:all .5s ease;
+          img{
+            margin-right: 15px;
+            width: 170px;
+            height: auto;
           }
-          .img{
-
+          .info{
+            h5{
+              color: #314870;
+              font-family: "PlayfairDisplay",sans-serif;
+              font-weight: 700;
+              margin-bottom: 5px;
+              transition: all .5s ease;
+            }
+            h6{
+              color: #949494;
+              font-size: 12px;
+              font-style: italic;
+            }
           }
-        }
-
-        .info{
-          background-color: #314870;
-          padding: 25px 0;
-          .name{
-            color: #f4d36a;
-            font-size: 24px;
-          }
-          .position{
-            color: #fff;
-          }
-        }
-        a{
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          left: 0;
-          top:0;
-          z-index: 3;
         }
       }
     }

@@ -8,6 +8,7 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+  font-weight: inherit;
 }
 
 body{
@@ -123,6 +124,14 @@ h2.title-section{
   font-family: "PlayfairDisplay",sans-serif;
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 50px;
+  @media(max-width: 767px){
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  @media(max-width: 320px){
+    font-size: 22px;
+  }
   &:before{
     content: '';
     display: block;
