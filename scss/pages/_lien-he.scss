@@ -14,12 +14,19 @@
         margin-bottom: 15px;
       }
       h3{
-        font-size: 15px;
-        color: #314870;
-        font-weight: 700;
+        margin-bottom: 15px;
+        > span{
+          margin-bottom: 8px;
+        }
+        span{
+          font-size: 15px;
+          color: #314870;
+          font-weight: 700;
+          display: block;
+        }
       }
       p{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         span{
           color: #5d5d5d;
           font-weight: 700;
